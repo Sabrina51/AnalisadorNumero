@@ -40,24 +40,12 @@ function botao_finalizar() {
     if (valorNumero.length === 0) {
         alert('[ERRO] Faltam valores. Impossível calcular!')
     } else {
-        let paragrafoResultado = document.createElement("p");
-        domElementoDivResultado.innerHTML = '';
-
-        paragrafoResultado.innerHTML = `<p>Ao todo, temos ${quantidade} números cadastrados.</p>`;
-        domElementoDivResultado.appendChild(paragrafoResultado);
-
-        paragrafoResultado.innerHTML = `<p>O maior valor informado foi ${maior}.</p>`
-        domElementoDivResultado.appendChild(paragrafoResultado);
-
-        paragrafoResultado.innerHTML = `<p>O menor valor informado foi ${menor}.</p>`
-        domElementoDivResultado.appendChild(paragrafoResultado);
-
-        paragrafoResultado.innerHTML = `<p>Somando todos os valores, temos ${soma}.</p>`
-        domElementoDivResultado.appendChild(paragrafoResultado);
-
-        paragrafoResultado.innerHTML = `<p>A média dos valores digitados é ${media}.</p>`
-        domElementoDivResultado.appendChild(paragrafoResultado);
-
+        domElementoDivResultado.innerHTML += '';
+        domElementoDivResultado.innerHTML += `<p>Ao todo, temos ${quantidade} números cadastrados.</p>`;
+        domElementoDivResultado.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`;
+        domElementoDivResultado.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`;
+        domElementoDivResultado.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`;
+        domElementoDivResultado.innerHTML += `<p>A média dos valores digitados é ${media}.</p>`
      
     }
     
