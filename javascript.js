@@ -25,7 +25,6 @@ function botao_adicionar() {
 }
 
 function botao_finalizar() {
-    //var domElementoDivResultado = document.getElementById('resultados');
     let quantidade = Number(valorNumero.length);
     let maior = Math.max.apply(null, valorNumero);
     let menor = Math.min.apply(null, valorNumero);
@@ -46,7 +45,6 @@ function botao_finalizar() {
         domElementoDivResultado.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`;
         domElementoDivResultado.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`;
         domElementoDivResultado.innerHTML += `<p>A média dos valores digitados é ${media}.</p>`
-     
     }
     
 }
